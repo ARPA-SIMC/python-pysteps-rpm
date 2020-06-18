@@ -16,6 +16,7 @@ Source0:        https://files.pythonhosted.org/packages/source/p/pysteps/pysteps
 BuildRequires:  %{python3_vers}-devel
 BuildRequires:  %{python3_vers}-setuptools
 BuildRequires:  %{python3_vers}-Cython
+BuildRequires:  %{python3_vers}-numpy
 
 %description
 Pysteps is an open-source and community-driven Python library for probabilistic
