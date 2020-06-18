@@ -13,10 +13,12 @@ License:        BSD 3-Clause
 URL:            https://pysteps.github.io/
 Source0:        https://files.pythonhosted.org/packages/source/p/pysteps/pysteps-%{version}.tar.gz
 
+BuildRequires:  gcc
 BuildRequires:  %{python3_vers}-devel
 BuildRequires:  %{python3_vers}-setuptools
-BuildRequires:  %{python3_vers}-Cython
 BuildRequires:  %{python3_vers}-numpy
+BuildRequires:  %{python3_vers}-Cython
+
 
 %description
 Pysteps is an open-source and community-driven Python library for probabilistic
