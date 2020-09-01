@@ -1,4 +1,4 @@
-%global commit 5443ace14f1890191923d36adb08ca6d626f5032
+%global commit b5aa2fe3c99a2db4f34349d64e8674b22497cbae
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 %if 0%{?rhel} == 7
@@ -63,5 +63,8 @@ precipitation nowcasting, i.e. short-term ensemble prediction systems.
 
 
 %changelog
+* Tue Sep 01 2020 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.3.2-1.simc.20200901.gitb5aa2fe
+- Custom version (waiting for https://github.com/pySTEPS/pysteps/issues/171 fix)
+
 * Thu Jun 18 2020 Daniele Branchini <dbranchini@arpae.it> - 1.3.1-1
 - Initial package
