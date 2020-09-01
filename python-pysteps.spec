@@ -1,3 +1,6 @@
+%global commit 5443ace14f1890191923d36adb08ca6d626f5032
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+
 %if 0%{?rhel} == 7
 %define python3_vers python36
 %else
@@ -5,13 +8,13 @@
 %endif
 
 Name:           python-pysteps
-Version:        1.3.1
-Release:        1%{?dist}
+Version:        1.3.2
+Release:        1.simc.20200901.git%{shortcommit}
 Summary:        weather radar data processing
 
 License:        BSD 3-Clause
 URL:            https://pysteps.github.io/
-Source0:        https://files.pythonhosted.org/packages/source/p/pysteps/pysteps-%{version}.tar.gz
+Source0:        https://github.com/ARPA-SIMC/pysteps/archive/%{commit}/pysteps-%{shortcommit}.tar.gz
 
 BuildRequires:  gcc
 BuildRequires:  %{python3_vers}-devel
@@ -41,7 +44,7 @@ Pysteps is an open-source and community-driven Python library for probabilistic
 precipitation nowcasting, i.e. short-term ensemble prediction systems.
 
 %prep
-%autosetup -n pysteps-%{version}
+%autosetup -n pysteps-%{commit}
 
 %build
 %py3_build
