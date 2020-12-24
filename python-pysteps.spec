@@ -1,5 +1,4 @@
-%global commit b5aa2fe3c99a2db4f34349d64e8674b22497cbae
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
+%global srcname  pysteps
 
 %if 0%{?rhel} == 7
 %define python3_vers python36
@@ -8,13 +7,13 @@
 %endif
 
 Name:           python-pysteps
-Version:        1.3.2
-Release:        1.simc.20200901.git%{shortcommit}
+Version:        1.4.0
+Release:        1
 Summary:        weather radar data processing
 
 License:        BSD 3-Clause
 URL:            https://pysteps.github.io/
-Source0:        https://github.com/ARPA-SIMC/pysteps/archive/%{commit}/pysteps-%{shortcommit}.tar.gz
+Source0:        %pypi_source
 
 BuildRequires:  gcc
 BuildRequires:  %{python3_vers}-devel
@@ -44,7 +43,7 @@ Pysteps is an open-source and community-driven Python library for probabilistic
 precipitation nowcasting, i.e. short-term ensemble prediction systems.
 
 %prep
-%autosetup -n pysteps-%{commit}
+%autosetup -n %{srcname}-%{version}
 
 %build
 %py3_build
@@ -63,6 +62,15 @@ precipitation nowcasting, i.e. short-term ensemble prediction systems.
 
 
 %changelog
+* Thu Dec 24 2020 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.4.0-1
+- Introducing the thunderstorm detection and tracking (DATing) modules [#178]
+- Introducing the RainFARM (Rebora et al. 2006) module for downscaling precipitation fields [#173]
+- Introducing the pysteps importers plugins [#174]
+- Improving the semi-lagrangian extrapolation method [#176] [#191]
+- Improving pysteps netCDF exporter [#175]
+- Implementing a more general importer for ODIM-compliant data sources [#171] [#172]
+- Improving plotting of basemaps [#177] [#180] [#192]
+
 * Tue Sep 01 2020 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.3.2-1.simc.20200901.gitb5aa2fe
 - Custom version (waiting for https://github.com/pySTEPS/pysteps/issues/171 fix)
 
