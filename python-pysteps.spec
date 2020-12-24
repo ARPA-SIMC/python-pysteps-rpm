@@ -20,6 +20,15 @@ BuildRequires:  %{python3_vers}-devel
 BuildRequires:  %{python3_vers}-setuptools
 BuildRequires:  %{python3_vers}-numpy
 BuildRequires:  %{python3_vers}-Cython
+BuildRequires:  %{python3_vers}-numpy
+BuildRequires:  %{python3_vers}-scipy
+BuildRequires:  %{python3_vers}-matplotlib
+BuildRequires:  %{python3_vers}-h5py
+BuildRequires:  %{python3_vers}-netcdf4
+BuildRequires:  %{python3_vers}-jsonschema
+BuildRequires:  %{python3_vers}-opencv
+BuildRequires:  %{python3_vers}-pillow
+BuildRequires:  %{python3_vers}-pyproj
 
 
 %description
