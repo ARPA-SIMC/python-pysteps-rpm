@@ -43,7 +43,7 @@ then
     dnf copr enable -q -y simc/stable
 fi
 
-$builddep -q -y python-pysteps.spec
+$builddep -y python-pysteps.spec
 
 if [[ $image =~ ^fedora: || $image =~ ^centos: ]]
 then
