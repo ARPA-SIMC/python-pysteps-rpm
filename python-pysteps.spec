@@ -7,7 +7,7 @@
 %endif
 
 Name:           python-pysteps
-Version:        1.4.0
+Version:        1.4.1
 Release:        1
 Summary:        weather radar data processing
 
@@ -71,6 +71,13 @@ precipitation nowcasting, i.e. short-term ensemble prediction systems.
 
 
 %changelog
+* Thu Jan 21 2020 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.4.1-1
+- Major refactoring of the pysteps.visualization module [#199]
+- Fix incompatibility that appeared with scipy>=1.6 [#203]
+- Fix bug introduced in v1.4.0 concerning the usage of the netcdf exporter in
+  pysteps.nowcasts.steps.forecast [#200]
+- Fix bug in pysteps.utils.cleansing.decluster [#194]
+
 * Thu Dec 24 2020 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.4.0-1
 - Introducing the thunderstorm detection and tracking (DATing) modules [#178]
 - Introducing the RainFARM (Rebora et al. 2006) module for downscaling precipitation fields [#173]
