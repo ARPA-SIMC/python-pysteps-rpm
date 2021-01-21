@@ -71,7 +71,7 @@ precipitation nowcasting, i.e. short-term ensemble prediction systems.
 
 
 %changelog
-* Thu Jan 21 2020 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.4.1-1
+* Thu Jan 21 2021 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.4.1-1
 - Major refactoring of the pysteps.visualization module [#199]
 - Fix incompatibility that appeared with scipy>=1.6 [#203]
 - Fix bug introduced in v1.4.0 concerning the usage of the netcdf exporter in
