@@ -1,4 +1,3 @@
-[![Build Status](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/centos7.png)](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/)
 [![Build Status](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/centos8.png)](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/)
 [![Build Status](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/fedora32.png)](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/)
 [![Build Status](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/fedora34.png)](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/)
