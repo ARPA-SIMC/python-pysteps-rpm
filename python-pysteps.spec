@@ -7,7 +7,7 @@
 %endif
 
 Name:           python-pysteps
-Version:        1.4.1
+Version:        1.5.0
 Release:        1
 Summary:        weather radar data processing
 
@@ -71,6 +71,18 @@ precipitation nowcasting, i.e. short-term ensemble prediction systems.
 
 
 %changelog
+* Mon Aug 23 2021 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.5.0-1
+- Add new ensemble nowcast model: Lagrangian INtegro-Difference equation model
+  with Autoregression (LINDA) by Pulkkinen et al. (2021) [#221]
+- Implement the local Lagrangian approach for probabilistic nowcasting by
+  Germann and Zawadzki (2004) [#207]
+- Refactor the utils.interpolate module [#210]
+- Implement the max_num_features keyword argument for all methods in the
+  pysteps.feature module [#225]
+- Fix a bug in utils.spectral.rapsd function causing negative frequency for
+  evenly-sized images [#211]
+- Fix coordinates of the bounding box in io.importers.import_mrms_grib [#222]
+
 * Thu Jan 21 2021 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.4.1-1
 - Major refactoring of the pysteps.visualization module [#199]
 - Fix incompatibility that appeared with scipy>=1.6 [#203]
