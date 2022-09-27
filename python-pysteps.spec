@@ -8,7 +8,7 @@
 
 Name:           python-pysteps
 Version:        1.5.0
-Release:        2
+Release:        3
 Summary:        weather radar data processing
 
 License:        BSD 3-Clause
@@ -29,6 +29,7 @@ BuildRequires:  %{python3_vers}-netcdf4
 BuildRequires:  %{python3_vers}-jsonschema
 BuildRequires:  %{python3_vers}-opencv
 BuildRequires:  %{python3_vers}-pillow
+BuildRequires:  %{python3_vers}-pip
 BuildRequires:  %{python3_vers}-pyproj
 
 
@@ -72,6 +73,9 @@ precipitation nowcasting, i.e. short-term ensemble prediction systems.
 
 
 %changelog
+* Tue Sep 27 2022 Daniele Branchini <dbranchini@arpae.it> - 1.5.0-3
+- Added explicit python3-pip dependency for f36
+
 * Fri Sep 17 2021 Daniele Branchini <dbranchini@arpae.it> - 1.5.0-2
 - Added explicit python3-wheel dependency for f34
 
