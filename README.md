@@ -1,7 +1,8 @@
 [![Build Status](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/rocky8.png)](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/)
 [![Build Status](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/rocky9.png)](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/)
-[![Build Status](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/fedora40.png)](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/)
+[![Build Status](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/rocky10.png)](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/)
 [![Build Status](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/fedora42.png)](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/)
+[![Build Status](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/fedora44.png)](https://simc.arpae.it/moncic-ci/python-pysteps-rpm/)
 [![Build Status](https://copr.fedorainfracloud.org/coprs/simc/stable/package/python-pysteps/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/simc/stable/package/python-pysteps/)
 
 # rpm packaging files for pysteps
